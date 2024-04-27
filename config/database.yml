@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: sql_gui_production
-  username: sql_gui
-  password: <%= ENV["SQL_GUI_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
